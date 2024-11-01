@@ -1,0 +1,167 @@
+/* Hero Section */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hero {
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+    color: var(--text-color);
+    background-image: url(../Assets/Hero-BG-2.jpg);
+}
+
+.hero h2 {
+    font-weight: 500;
+}
+
+.hero p {
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+/* Menu Showcase */
+.menu-showcase {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.7rem;
+}
+
+.menu-showcase .headbar {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 0 2rem;
+    background-color: var(--text-color);
+    color: var(--accent-color);
+    border-radius: 5px;
+}
+
+.menu-showcase .headbar h3:first-child{
+    font-family: 'Yellowtail', sans-serif;
+    font-size: 1.8rem;
+}
+
+.menu-showcase .headbar a {
+    color: var(--accent-color);
+    text-decoration: underline 1.5px;
+}
+
+.menu-showcase .menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu-showcase .menu .items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu-showcase .menu .items .item {
+    width: 160px;
+    height: 200px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+}
+
+.menu-showcase .menu .items .item .item-img {
+    position: relative;
+    top: 0;
+    width: 160px;
+    height: 120px;
+}
+
+.menu-showcase .menu .items .item .item-img img {
+    border-radius: 8px 8px 0 0;
+}
+
+.menu-showcase .sale-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 200px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.menu-showcase .sale-item .items-imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    gap: 10px;
+}
+
+.menu-showcase .sale-item .sale-text {
+    text-align: center;
+}
+
+.menu-showcase .sale-item .sale-text h4 {
+    font-size: 1.8rem;
+}
+
+/* Other Links */
+.other-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 450px;
+}
+
+.other-links .links {
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 5px;
+}
+
+.other-links .links p {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.other-links .big-img {
+    height: 400px;
+    width: 600px;
+    border-radius: 5px;
+} 
+
+.other-links .big-img {
+    border-radius: 5px;
+}

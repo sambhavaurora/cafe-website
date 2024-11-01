@@ -1,0 +1,196 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200..700&family=Yellowtail&display=swap');
+
+/* Defaults */
+:root {
+    --primary-color: #3b1c15;
+    --secondary-color: #803d29;
+    --accent-color: #ec3553;
+    --light-color: #e8bd9a;
+    --text-color: #f1e8e6;
+}
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Yaldevi', sans-serif;
+    line-height: 1.5;
+    background-color: #FFFFFF;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--light-color);
+}
+
+ul {
+	list-style: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+    outline: none;
+    border: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: var(--text-color);
+}
+
+.navbar {
+    margin-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    width: 80px;
+}
+
+.navbar .title {
+    font-family: 'Yellowtail', sans-serif;
+    color: var(--primary-color);
+    font-size: 1.7rem;
+}
+
+.navbar .sidebar-toggle {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar .sidebar-toggle .fa-bars {
+    position: relative;
+    top: 5%;
+    left: 10%;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+/* Utility Classes */
+.btn {
+    display: inline-block;
+    text-align: center;
+    font-size: 1.3rem;
+    height: 24px;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 3px;
+    background-color: var(--secondary-color);
+}
+
+.btn:hover a {
+    color: var(--text-color);
+}
+
+.h-sep {
+    position: relative;
+    height: 2px;
+    width: 85%;
+    background-color: var(--light-color);
+}
+
+.v-sep {
+    position: relative;
+    height: 85%;
+    width: 2px;
+    background-color: var(--light-color);
+}
+
+/* Footer */
+.footer {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    background-color: var(--text-color);
+    color: var(--primary-color);
+}
+
+.footer a {
+    color: var(--primary-color);
+}
+
+.footer a:hover {
+    color: var(--secondary-color);
+}
+
+.footer .footer-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer .footer-head .footer-logo {
+    height: 100px;
+    border-radius: 3px;
+}
+
+.footer .footer-head .footer-logo img {
+    border-radius: 3px;
+}
+
+.footer .footer-head .footer-title {
+    width: 225px;
+}
+
+.footer .footer-head .footer-title h1 {
+    font-family: 'Yellowtail', sans-serif;
+}
+
+.footer .footer-head .footer-title p {
+    font-size: 10px;
+}
+
+.footer .footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.footer .footer-links .footer-nav, .footer .footer-links .order-links, .footer .footer-links .social-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer .footer-links .order-links img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
