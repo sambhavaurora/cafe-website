@@ -1,0 +1,227 @@
+/* Heading */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.heading h2 {
+    font-family: 'Yellowtail', sans-serif;
+    font-size: 4rem;
+    color: var(--accent-color);
+}
+
+.heading p {
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+
+/* Menu Search */
+.menu-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    height: 60px;
+    color: var(--primary-color);
+}
+
+.menu-search .select-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.menu-search .select-type p:first-child {
+    width: 5rem;
+}
+
+.menu-search .select-type .toggle {
+    width: 80px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu-search .select-type .toggle .slider {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu-search .select-type .toggle .slider .slider-btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.menu-search .select-type .toggle-on .slider {
+    background-color: var(--secondary-color);
+}
+
+.menu-search .select-type .toggle-on .slider-btn {
+    background-color: var(--text-color);
+}
+.menu-search .select-type .toggle-off .slider {
+    background-color: var(--text-color);
+}
+
+.menu-search .select-type .toggle-off .slider-btn {
+    background-color: var(--secondary-color);
+}
+
+.menu-search .search-bar {
+    width: 40vw;
+}
+
+.menu-search .search-bar form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+}
+
+.menu-search .search-bar form input[type="text"] {
+    width: 90%;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px 0 0  10px;
+    background-color: var(--text-color);
+    color: var(--primary-color);
+}
+
+.menu-search .search-bar form #search-btn {
+    height: 40px;
+    width: 10%;
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    padding: 0;
+    margin: 0;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-search .cart-btn {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 36px;
+    border-radius: 8px;
+}
+
+.menu-search .cart-btn .fa-shopping-cart {
+    width: 16px;
+    height: 16px;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 0 1rem;
+    text-align: center;
+    width: 1200px;
+    overflow-x: hidden;
+}
+
+.menu #categories::-webkit-scrollbar, .menu #items::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.menu #categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    color: var(--primary-color);
+    overflow-y: auto;
+    height: 800px;
+}
+
+.menu #categories .category {
+    width: 160px;
+    height: 160px;
+    background-color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    gap: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu #categories .category .category-img {
+    width: 80px;
+    height: 80px;
+}
+
+.menu #categories .category p {
+    font-size: 1.1rem;
+}
+
+.menu #items {
+    width: 80%;
+    height: 800px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 1rem 0;
+}
+
+.menu #items .item {
+    height: 240px;
+    width: 180px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 1rem;
+}
+
+.menu #items .item .item-img, .menu #items .item .item-img img {
+    border-radius: 8px 8px 0 0;
+}
+
+.menu #items .item p {
+    font-size: 1.1rem;
+}
+
+.menu #items .item .add-cart {
+    width: 100px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
