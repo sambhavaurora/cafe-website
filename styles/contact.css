@@ -1,0 +1,96 @@
+/* Heading */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    color: var(--primary-color);
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.heading h1 {
+    font-family: 'Yellowtail', sans-serif;
+    font-size: 4rem;
+    color: var(--accent-color);
+}
+
+.heading p {
+    font-size: 1.2rem;
+}
+
+/* Contact */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 400px;
+}
+
+.contact .contact-form {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.contact .contact-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.contact .contact-form form .input-field input, .contact .contact-form form textarea {
+    padding: 5px;
+    border-radius: 3px;
+    color: var(--primary-color);
+}
+
+/* .contact .contact-form form textarea {
+    width: 200px;
+} */
+
+.contact .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.contact .contact-info .phone, .contact .contact-info .socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contact .contact-info .socials .social, .contact .contact-info .email, .creator-reach .github {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.contact .contact-info .email a {
+    text-transform: lowercase;
+}
+
+/* Creator Reach */
+.creator-reach {
+    font-size: 1.2rem;
+}

@@ -1,0 +1,58 @@
+/* Heading */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    color: var(--primary-color);
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.heading h1 {
+    font-size: 4rem;
+    font-family: 'Yellowtail', sans-serif;
+    color: var(--accent-color);
+    text-align: center;
+}
+
+.heading p {
+    font-size: 1.1rem;
+}
+
+/* About */
+.left-aligned, .right-aligned {
+    padding: 0 2rem;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.left-aligned h3, .right-aligned h3, .center-aligned h3 {
+    font-size: 2.5rem;
+}
+
+.left-aligned p, .right-aligned p, .center-aligned p {
+    font-size: 1.1rem;
+}
+
+.center-aligned {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
