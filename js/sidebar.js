@@ -7,11 +7,13 @@ sidebarToggle.addEventListener("click", toggleSidebar);
 
 function toggleSidebar(){
     if (sidebar.style.right === "0px") {
-        sidebar.style.right = "-160px";
+        sidebar.style.right = "-11rem";
+        sidebar.style.visibility = "hidden";
         toggleIcon.classList.remove('fa-x');
         toggleIcon.classList.add('fa-bars');
     } else {
         sidebar.style.right = "0px";
+        sidebar.style.visibility = "visible";
         toggleIcon.classList.remove('fa-bars');
         toggleIcon.classList.add('fa-x');
     }
