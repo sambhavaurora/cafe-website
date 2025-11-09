@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="./Assets/Icon.png" type="image/x-icon" />
+	<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+		integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+		crossorigin="anonymous" />
+	<link rel="stylesheet" href="./styles/main.css" />
+	<link rel="stylesheet" href="./styles/about.css" />
+	<title>Love & Serve: Bakery & Cafe | Home</title>
+</head>
+
+<body>
+	<!-- Navbar -->
+	<nav>
+		<div class="navbar">
+			<div class="logo"><img src="./Assets/Icon.png" alt="Logo" /></div>
+			<div class="title">
+				<h1>Love & Serve: Bakery & Cafe</h1>
+			</div>
+			<div id="nav-buttons">
+				<?php
+				session_start();
+				if ($_SESSION['LOGGED_IN'] === false || !isset($_SESSION['LOGGED_IN'])) {
+					echo '
+								<div>
+									<a href="./login.php"><i class="fa fa-sign-in fa-2x" aria-hidden="true"></i></a>
+								</div>';
+				} else if ($_SESSION['LOGGED_IN'] === true) {
+					echo '
+								<div>
+									<a href="./profile.php"><i class="fa fa-user fa-2x" aria-hidden="true"></i></a>
+								</div>
+								<div>
+            						<a href="./logout.php"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i></a>
+        						</div>';
+				}
+				?>
+				<div id="sidebar-toggle">
+					<i class="fa fa-bars fa-2x" id="toggle-icon" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+		<div id="sidebar">
+			<div class="page-links">
+				<ul>
+					<li>
+						<div class="page-img">
+							<img src="./Assets/homepage.png" alt="Home" />
+						</div>
+						<a href="./index.php">Home</a>
+					</li>
+					<li>
+						<div class="page-img">
+							<img src="./Assets/menupage.png" alt="Menu" />
+						</div>
+						<a href="./menu.php">Menu</a>
+					</li>
+					<li>
+						<div class="page-img">
+							<img src="./Assets/locationpage.png" alt="Locations" />
+						</div>
+						<a href="./locations.php">Locations</a>
+					</li>
+					<li>
+						<div class="page-img">
+							<img src="./Assets/aboutpage.png" alt="About" />
+						</div>
+						<a href="./about.php">About Us</a>
+					</li>
+					<li>
+						<div class="page-img">
+							<img src="./Assets/contactpage.png" alt="Contact" />
+						</div>
+						<a href="./contact.php">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<main>
+		<div class="heading">
+			<h1>About Us</h1>
+			<p>Welcome to Love & Serve: Café & Bakery! Here, we believe that a cup of coffee or a bite of a fresh-baked pastry is more than just a taste – it’s an experience. Our mission is to offer you a moment of tranquility, a place where every sip and every bite evokes the feeling of watching a sunset on a peaceful, open field. We’re more than just a café; we’re a sanctuary, a gathering place, and a retreat.</p>
+		</div>
+		<div class="left-aligned">
+			<h3>Our Story</h3>
+			<div class="v-sep"></div>
+			<p>Love & Serve began with a simple vision: to create a space that feels like home. Inspired by our love for coffee and the joy of sharing good food, we set out to build a café that’s warm, welcoming, and full of heart. Every detail – from the menu to the décor – is crafted to make you feel comfortable, relaxed, and truly cared for. Here, you’ll find the warmth of a family kitchen combined with the freshness of your favorite neighborhood café.</p>
+		</div>
+		<div class="center-aligned">
+			<h3>Community & Sustainability</h3>
+			<div class="h-sep"></div>
+			<p>We believe that great coffee and food should be kind to both people and the planet. That’s why we prioritize sustainable practices, from compostable packaging to partnerships with local farmers. Our menu features local and organic ingredients whenever possible, supporting small businesses and reducing our carbon footprint. As a part of our community, we also host monthly events to bring people together – from book clubs to open mic nights.</p>
+		</div>
+		<div class="right-aligned">
+			<p>We chose the name Love & Serve because these two values guide everything we do. Love shows in every detail, from the friendly greeting at the door to the last bite of dessert. Serving is our commitment to you – to provide an experience that leaves you feeling better, calmer, and cared for. We’re here to serve not just food and drink, but also warmth, connection, and a little slice of peace.</p>
+			<div class="v-sep"></div>
+			<h3>Our Values</h3>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer">
+			<div class="footer-head">
+				<div class="footer-logo"><img src="./Assets/Logo.png" alt="Logo" /></div>
+				<div class="footer-title">
+					<h1>Love & Serve: Bakery & Cafe</h1>
+					<p>Kunal Kumar & Sambhav Arora &copy; 2024</p>
+				</div>
+			</div>
+			<div class="footer-links">
+				<div class="footer-nav">
+					<a href="menu.php">Menu</a>
+					<a href="locations.php">Locations</a>
+					<a href="about.php">About Us</a>
+					<a href="contact.php">Contact Us</a>
+				</div>
+				<div class="social-links">
+					<p>Our Social:</p>
+					<a href="#"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+				</div>
+				<div class="order-links">
+					<p>Order Now:</p>
+					<a href="#"><img src="./Assets/zomato.png" alt="zomato" /></a>
+					<a href="#"><img src="./Assets/swiggy.png" alt="swiggy" /></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./js/sidebar.js"></script>
+</body>
+
+</html>

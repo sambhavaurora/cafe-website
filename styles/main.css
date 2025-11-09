@@ -87,16 +87,20 @@ nav {
     font-size: 1.7rem;
 }
 
-.navbar #sidebar-toggle {
-    width: 60px;
-    height: 60px;
+.navbar #sidebar-toggle .fa {
+    cursor: pointer;
+    color: var(--primary-color);
 }
 
-.navbar #sidebar-toggle .fa {
-    position: relative;
-    top: 5%;
-    left: 10%;
-    cursor: pointer;
+.navbar #nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+
+.navbar #nav-buttons .fa {
     color: var(--primary-color);
 }
 
@@ -158,8 +162,7 @@ nav {
     display: inline-block;
     text-align: center;
     font-size: 1.3rem;
-    height: 2rem;
-    padding: 0 10px;
+    padding: 5px 10px;
     border-radius: 3px;
     margin: 3px;
     background-color: var(--secondary-color);

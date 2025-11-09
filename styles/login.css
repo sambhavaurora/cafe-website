@@ -1,0 +1,69 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    gap: 2rem;
+}
+
+#title {
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Yellowtail', sans-serif;
+    color: var(--accent-color);
+}
+
+#login-form {
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+}
+
+#login-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    color: var(--text-color);
+}
+
+#login-form form input[type="text"],
+#login-form form input[type="password"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+#login-form form .form-submit-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+#login-form form .inp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.message {
+    text-align: flex-start;
+    width: 30%;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color : var(--text-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.message.error {
+    background-color: var(--accent-color);
+}
+
+.message.success {
+    background-color: #34e011;
+}
